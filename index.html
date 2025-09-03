@@ -1,40 +1,293 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Daniel Massey - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Daniel Massey's Portfolio</h1>
-    <h2>Computer Science Student at Foothill college</h2>
-    <hr>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">DM</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <h2><a href = "./public/movie-ranking.html">Movie Ranking Project</a></h2>
-    <img src = "assets/images/movie-ranking.png" height = "400">
-    
-    <h2><a href = "./public/birthday-invite.html">Birthday Invite Project</a></h2>
-    <img src = "assets/images/birthday-invite.png" height = 400>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Daniel Massey</span></h1>
+                <p class="hero-subtitle">Computer Science & Engineering Student</p>
+                <p class="hero-description">Passionate about building innovative solutions through full-stack development, machine learning, and engineering.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="Daniel Massey Resume 2025.pdf" download class="btn btn-secondary">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/danieltmassey" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:danielmassey222@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:408-393-9627"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="DSC05052-2_Original.jpg" alt="Daniel Massey">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-    <hr>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science and Engineering student at Foothill College with a 3.8 GPA, expected to graduate in December 2025. My journey in tech spans from low-level circuit design to high-level software development, giving me a unique perspective on building complete solutions.</p>
+                    <p>As Secretary of the Computer Science Club and Workshop Lead for the Data Science & AI Club, I love sharing knowledge and collaborating with peers on innovative projects. Whether it's developing full-stack applications, exploring machine learning algorithms, or designing hardware systems, I bring enthusiasm and dedication to every challenge.</p>
+                    <div class="education-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <h4>A.S. in Computer Science and Engineering for Transfer</h4>
+                        <p>Foothill College | Sept 2023 - Dec 2025 | GPA: 3.8</p>
+                        <p class="coursework">Relevant Coursework: Advanced Data Structures, Software Design (C++), Computer Architecture, OOP (C++/Python/Java), Discrete Math, Differential Equations, Linear Algebra, Physics, Circuit Theory I</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2><a href = "./public/about.html">About Me</a><a href = "./public/contact.html"> Contact Me</a></h2>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Swift</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Hardware Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Circuit Design</span>
+                        <span class="skill-tag">Breadboarding</span>
+                        <span class="skill-tag">Oscilloscopes</span>
+                        <span class="skill-tag">Waveform Generators</span>
+                        <span class="skill-tag">Multimeters</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>FullStack Fitness Tracker</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-tech">MERN Stack, Tailwind CSS</p>
+                    <ul class="project-description">
+                        <li>Developed a full-stack fitness app with workout logging, nutrition tracking, and JWT-based authentication</li>
+                        <li>Designed RESTful APIs for secure data handling; integrated personalized dashboards with progress visualization</li>
+                        <li>Engineered advanced features including dynamic exercise tracking and macro nutrition analysis</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Console Minesweeper</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-tech">Java, JavaFX, Eclipse</p>
+                    <ul class="project-description">
+                        <li>Built a fully functional console-based Minesweeper game using OOP principles (inheritance, abstraction)</li>
+                        <li>Optimized gameplay logic with efficient data structures and algorithms</li>
+                        <li>Enhanced user engagement by integrating JavaFX visuals for real-time feedback and improved interactivity</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Calculator Web Application</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-tech">React, JavaScript</p>
+                    <ul class="project-description">
+                        <li>Implemented accurate calculation logic with React state management</li>
+                        <li>Designed an intuitive, mobile-responsive UI with operation history tracking</li>
+                        <li>Increased usability by adding keyboard input support and error handling for invalid operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Leadership & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Secretary, Computer Science Club</h3>
+                        <p class="timeline-org">Foothill College</p>
+                        <ul>
+                            <li>Led weekly workshops covering key software topics from command-line tools to front-end development</li>
+                            <li>Developed live coding demonstrations, working closely with students to apply concepts and troubleshoot</li>
+                            <li>Managed club meetings and expanded outreach efforts, increasing attendance and member engagement</li>
+                            <li>Projects: Built a Reddit clone, developed a Spotify visualization tool, and created a mobile budget manager app</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Workshop Lead, Data Science & AI Club</h3>
+                        <p class="timeline-org">Foothill College</p>
+                        <ul>
+                            <li>Organized and led keynote learning sessions on data science and AI, teaching peers fundamental concepts</li>
+                            <li>Introduced basic machine learning techniques and popular Python libraries (NumPy, pandas, scikit-learn)</li>
+                            <li>Guided students through basic AI algorithms, fostering hands-on learning and collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2023 - June 2025</div>
+                    <div class="timeline-content">
+                        <h3>Member, Engineering Club</h3>
+                        <p class="timeline-org">Foothill College</p>
+                        <ul>
+                            <li>Projects: RC Cars (designed wiring schematic, built, tested)</li>
+                            <li>Planned and initiated the design of battle bots, applying mechanical, electrical, and control system principles</li>
+                            <li>Delivered demonstrations and walkthroughs of engineering projects to peers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Machine Learning Crash Course</h3>
+                    <p class="cert-issuer">Google for Developers</p>
+                    <ul>
+                        <li>Gained hands-on experience with regression, classification, and neural networks using TensorFlow</li>
+                        <li>Applied ML best practices in data preparation, embedding, AutoML, and model fairness</li>
+                        <li>Explored advanced concepts including LLMs and production ML system design</li>
+                    </ul>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>CS50AI: Introduction to AI with Python</h3>
+                    <p class="cert-issuer">HarvardX - Aug 2025</p>
+                    <ul>
+                        <li>Completed course covering Search Algorithms, Knowledge Representation, and Reinforcement Learning</li>
+                        <li>Built projects applying Bayesian networks, neural networks, and NLP</li>
+                        <li>Gained experience implementing AI-driven solutions using modern libraries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'm always interested in new opportunities and collaborations.</p>
+            <div class="contact-info">
+                <a href="mailto:danielmassey222@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>danielmassey222@gmail.com</span>
+                </a>
+                <a href="tel:408-393-9627" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(408) 393-9627</span>
+                </a>
+                <a href="https://github.com/danieltmassey" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/danieltmassey</span>
+                </a>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Santa Clara, CA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Daniel Massey. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
